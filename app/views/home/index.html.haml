@@ -1,0 +1,283 @@
+.cover
+
+%header.header
+  .desktop.bp-container.variation.flex_between
+    .logotype 
+      %h1
+        = image_tag "logo.png"
+    %nav.nav.left.top-level-navigation
+      %ul.flex
+        %li.active
+          %a{:href => "index.html"} Home
+        %li
+          %a{:href => "category/art/index.html"} Art
+        %li
+          %a{:href => "category/photography/index.html"} Photography
+        %li
+          %a{:href => "category/animals/index.html"} Animals
+        %li.more
+          %a{:href => "javascript:void(0)"}
+            More
+            %svg.svg-icon.icon-arrow-down-menu{:height => "9", :role => "img", :viewbox => "0 0 16 9", :width => "16"}
+              %g
+                %path{:d => "M15.7,1.9c0.4-0.4,0.4-1.2,0-1.6c-0.4-0.4-1.2-0.4-1.6,0l-6,6\n\t\tl-6-6c-0.4-0.4-1.2-0.4-1.6,0C0.1,0.5,0,0.8,0,1.1c0,0.3,0.1,0.6,0.3,0.8l6.9,6.7c0.4,0.4,1.2,0.4,1.6,0L15.7,1.9z"}
+    %nav.nav.right.flex_between
+      %ul.flex
+        %li.add-post
+          %a.add-post-top-button{:href => ""}
+            %i
+              %svg.svg-icon.icon-add-post-form-top{:height => "14", :role => "img", :viewbox => "0 0 20 14", :width => "20"}
+                %path{:d => "M15,4c-0.1,0-0.2,0-0.4,0C13.8,1.6,11.6,0,9,0C5.7,0,3,2.7,3,6v0.1c-1.7,0.4-3,2-3,3.9c0,2.2,1.8,4,4,4h5V9.4l-1.3,1.3\n\tC7.5,10.9,7.3,11,7,11s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l3-3c0.1-0.1,0.2-0.2,0.3-0.2c0.2-0.1,0.5-0.1,0.8,0\n\tc0.1,0,0.2,0.1,0.3,0.2l3,3c0.4,0.4,0.4,1,0,1.4C13.5,10.9,13.3,11,13,11c-0.3,0-0.5-0.1-0.7-0.3L11,9.4V14h4c2.8,0,5-2.2,5-5\n\tC20,6.2,17.8,4,15,4z"}
+            Add post
+        %li
+          %a.login-url.visible-downto-xs{:href => "javascript:void(0);"} Login / Register
+  #categories-variation-new.top-categories.variation.flex_nolr
+    .bp-container.flex_nolr
+      %ul.flex_nolr
+        %li.border-left
+          %a.popular.active{:href => "index.html"}
+            Featured
+        %li
+          %a.trending{:href => "index-show=trending.html"}
+            Trending
+        %li
+          %a.latest{:href => "index-show=recent.html"}
+            Latest
+  .mobile.bp-container.flex_center
+    %a.logotype{:href => "index.html"} BoredPanda
+    %a.login-url{:href => "#{}"} Login
+    %a.add-post.add-post-tablet{:href => "add-new-post/index.html"}
+      %i>
+        %svg.svg-icon.icon-add-post-form-top{:height => "14", :role => "img", :viewbox => "0 0 20 14", :width => "20"}
+          %path{:d => "M15,4c-0.1,0-0.2,0-0.4,0C13.8,1.6,11.6,0,9,0C5.7,0,3,2.7,3,6v0.1c-1.7,0.4-3,2-3,3.9c0,2.2,1.8,4,4,4h5V9.4l-1.3,1.3\n            \tC7.5,10.9,7.3,11,7,11s-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l3-3c0.1-0.1,0.2-0.2,0.3-0.2c0.2-0.1,0.5-0.1,0.8,0\n            \tc0.1,0,0.2,0.1,0.3,0.2l3,3c0.4,0.4,0.4,1,0,1.4C13.5,10.9,13.3,11,13,11c-0.3,0-0.5-0.1-0.7-0.3L11,9.4V14h4c2.8,0,5-2.2,5-5\n            \tC20,6.2,17.8,4,15,4z"}
+      Add Post        
+    %a.search{:href => "javascript:void(0)"}
+      %svg.svg-icon.icon-search{:height => "22", :role => "img", :viewbox => "0 0 22 22", :width => "22"}
+        %path{:d => "M19.7,21.6L13,15c-1.3,1-3,1.5-4.8,1.5C3.7,16.5,0,12.8,0,8.2\n            \tC0,3.7,3.7,0,8.2,0s8.3,3.7,8.3,8.2c0,1.8-0.6,3.4-1.5,4.8l6.6,6.6c0.5,0.5,0.5,1.4,0,1.9C21.1,22.1,20.2,22.1,19.7,21.6z M8.2,2.7\n            \tc-3,0-5.5,2.5-5.5,5.5c0,3,2.5,5.5,5.5,5.5c1,0,2-0.3,2.8-0.8c0.8-0.5,1.5-1.1,1.9-1.9c0.5-0.8,0.8-1.8,0.8-2.8\n            \tC13.8,5.2,11.3,2.7,8.2,2.7z"}
+  .responsive-sub-menu.clearfix
+    %ul
+      %li.active
+        %a{:href => "http://www.boredpanda.com"} Home
+      %li
+        %a{:href => "/category/art/"}
+          %span.category-name Art
+      %li
+        %a{:href => "/category/photography/"}
+          %span.category-name Photography
+      %li
+        %a{:href => "/category/animals/"}
+          %span.category-name Animals
+      %li
+        %a{:href => "/category/travel/"}
+          %span.category-name Travel
+      %li
+        %a{:href => "/category/illustration/"}
+          %span.category-name Illustration
+      %li
+        %a{:href => "/category/diy/"}
+          %span.category-name DIY
+      %li
+        %a{:href => "/category/good-news/"}
+          %span.category-name Good News
+      %li
+        %a{:href => "/category/funny/"}
+          %span.category-name Funny
+      %li
+        %a{:href => "/category/parenting/"}
+          %span.category-name Parenting
+      %li
+        %a{:href => "/category/challenge/"}
+          %span.category-name Challenge
+      %li
+        %a{:href => "/category/ask-pandas/"}
+          %span.category-name Ask Pandas
+      %li
+        / <a id="mobile-categories-show" href="javascript: void(0);">More<span class="icon icon-arrow-down-menu"></span></a>
+        %a#mobile-categories-show{:href => "javascript: void(0);"}
+          More
+          %span.arrow-down-menu
+
+%main.main.bp-container.clearfix
+  %nav.mobile-category-list
+    %ul
+      %li.popular.active
+        %a{:href => "index.html"} Featured
+      %li
+        %a{:href => "index-show=trending.html"} Trending
+      %li
+        %a{:href => "index-show=recent.html"} Latest
+  %section.posts
+    %article.post{"data-content-experiment-enabled" => "true", "data-content-experiment-id" => "1731", "data-content-experiment-total-variations" => "3", "data-content-experiment-variation" => "2", "data-current-feed" => "featured", "data-post-id" => "711745", "data-track-ctr" => "false"}
+      %header.post-header.clearfix
+        .post-cover-container
+          %a{:href => "girl-job-application-google-chloe-bridgewater/index-cexp_id=1731&cexp_var=2&_f=featured.html", :rel => "bookmark", :title => "Permanent Link to 7-Year-Old Girl Asks Google For A Job, Gets A Priceless Response Letter"}
+            %img.image-size-full{:alt => "", :src => "assets/japan.jpg"}/
+            / .mobile-post-info
+            /   %span.views
+            /   %span.shares
+      %h2
+        %a.title{:href => "girl-job-application-google-chloe-bridgewater/index-cexp_id=1731&cexp_var=2&_f=featured.html", :rel => "bookmark", :title => "Permanent Link to 7-Year-Old Girl Asks Google For A Job, Gets A Priceless Response Letter"}
+          7-Year-Old Girl Applies For A Job At Google, Gets A Priceless Response Letter
+      .intro
+        %p.description.visible-downto-xs Ask most 7-year-olds what they want to be when they grow up and you can guarantee that the responses will be typically fantastical, from spacemen and cowgirls to firefighters and rockstars. But all Chloe Bridgewater wants to do is work for...
+      %footer.footer.flex_between
+        .left.flex_start
+          %a.fb-custom-share-mobile.bottom-bar-share-button{:href => "javascript:void(0);", :onclick => "\n        \t\t  window.open(\n                    'https://www.facebook.com/dialog/share?app_id='+BoredPanda.Config.fbAppId+'&display=popup&href='+encodeURIComponent('http://www.boredpanda.com/girl-job-application-google-chloe-bridgewater/')+'&redirect_uri='+encodeURIComponent(BoredPanda.Config.pandaBaseUrl+'/close.html'),\n        \t\t\t'facebook-share-dialog',\n        \t\t\t'width=626,height=436');\n        \t\t  return false;", :title => ""}
+            %i>
+              %svg.svg-icon.icon-facebook-share{:height => "46", :role => "img", :viewbox => "0 0 46 46", :width => "46"}
+                %path{:d => "M43.5,0H2.5C1.1,0,0,1.1,0,2.5v40.9C0,44.9,1.1,46,2.5,46h22V28.2h-6v-6.9h6v-5.1c0-5.9,3.6-9.2,8.9-9.2\n\tc2.5,0,4.7,0.2,5.4,0.3v6.2l-3.7,0c-2.9,0-3.4,1.4-3.4,3.4v4.4h6.9l-0.9,6.9h-6V46h11.7c1.4,0,2.5-1.1,2.5-2.5V2.5\n\tC46,1.1,44.9,0,43.5,0z"}
+            Share
+        .right.flex_end
+          .comments-count.visible-downto-xs
+            %a.comments.flex{:href => "girl-job-application-google-chloe-bridgewater/index-.html#post-comments-area"}
+              %i>
+                %svg.svg-icon.icon-open-list-comments{:height => "14", :role => "img", :viewbox => "0 0 14 14", :width => "14"}
+                  %path{:d => "M2.6,0h8.8C13,0,14,1,14,2.6v5.7c0,1.6-1,2.6-2.6,2.6H8.8L3.9,14v-3.1H2.6\n\tC1,10.9,0,9.9,0,8.3V2.6C0,1,1,0,2.6,0z"}
+              6
+              %span.comments-count-text comments
+
+          .vote-panel.vote-post.votes.flex_nolr
+            .vote
+              %a.btn1.btn-up{"data-post-id" => "711745", :href => "javascript:void(0);"}
+                %i
+                  %svg.svg-icon.icon-vote-arrow-up{:height => "16", :role => "img", :viewbox => "0 0 14 16", :width => "14"}
+                    %path{:d => "M10,15V9h3c0.6,0,1-0.3,1-1c0-0.5-0.3-0.8-0.6-1.1L8.2,0.7C7.8,0.3,7.5,0,7,0S6.2,0.3,5.8,0.7L0.6,6.9C0.3,7.2,0,7.5,0,8\n\tc0,0.7,0.4,1,1,1h3v6c0,0.6,0.4,1,1,1h4C9.6,16,10,15.6,10,15z"}
+            .vote
+              %a.btn1.btn-down{"data-post-id" => "711745", :href => "javascript:void(0);"}
+                %i
+                  %svg.svg-icon.icon-vote-arrow-down{:height => "16", :role => "img", :viewbox => "0 0 14 16", :width => "14"}
+                    %path{:d => "M4,1v6H1C0.4,7,0,7.3,0,8c0,0.5,0.3,0.8,0.6,1.1l5.2,6.1C6.2,15.7,6.5,16,7,16s0.8-0.3,1.2-0.7l5.2-6.1\n\tC13.7,8.8,14,8.5,14,8c0-0.7-0.4-1-1-1h-3V1c0-0.6-0.4-1-1-1H5C4.4,0,4,0.4,4,1z"}
+            .points{"data-points" => "44"}
+              44
+              %span.points-text points
+    %article.post{"data-content-experiment-enabled" => "true", "data-content-experiment-id" => "1731", "data-content-experiment-total-variations" => "3", "data-content-experiment-variation" => "2", "data-current-feed" => "featured", "data-post-id" => "711745", "data-track-ctr" => "false"}
+      %header.post-header.clearfix
+        .post-cover-container
+          %a{:href => "girl-job-application-google-chloe-bridgewater/index-cexp_id=1731&cexp_var=2&_f=featured.html", :rel => "bookmark", :title => "Permanent Link to 7-Year-Old Girl Asks Google For A Job, Gets A Priceless Response Letter"}
+            %img.image-size-full{:alt => "", :src => "assets/japan.jpg"}/
+            / .mobile-post-info
+            /   %span.views
+            /   %span.shares
+      %h2
+        %a.title{:href => "girl-job-application-google-chloe-bridgewater/index-cexp_id=1731&cexp_var=2&_f=featured.html", :rel => "bookmark", :title => "Permanent Link to 7-Year-Old Girl Asks Google For A Job, Gets A Priceless Response Letter"}
+          7-Year-Old Girl Applies For A Job At Google, Gets A Priceless Response Letter
+      .intro
+        %p.description.visible-downto-xs Ask most 7-year-olds what they want to be when they grow up and you can guarantee that the responses will be typically fantastical, from spacemen and cowgirls to firefighters and rockstars. But all Chloe Bridgewater wants to do is work for...
+      %footer.footer.flex_between
+        .left.flex_start
+          %a.fb-custom-share-mobile.bottom-bar-share-button{:href => "javascript:void(0);", :onclick => "\n        \t\t  window.open(\n                    'https://www.facebook.com/dialog/share?app_id='+BoredPanda.Config.fbAppId+'&display=popup&href='+encodeURIComponent('http://www.boredpanda.com/girl-job-application-google-chloe-bridgewater/')+'&redirect_uri='+encodeURIComponent(BoredPanda.Config.pandaBaseUrl+'/close.html'),\n        \t\t\t'facebook-share-dialog',\n        \t\t\t'width=626,height=436');\n        \t\t  return false;", :title => ""}
+            %i>
+              %svg.svg-icon.icon-facebook-share{:height => "46", :role => "img", :viewbox => "0 0 46 46", :width => "46"}
+                %path{:d => "M43.5,0H2.5C1.1,0,0,1.1,0,2.5v40.9C0,44.9,1.1,46,2.5,46h22V28.2h-6v-6.9h6v-5.1c0-5.9,3.6-9.2,8.9-9.2\n\tc2.5,0,4.7,0.2,5.4,0.3v6.2l-3.7,0c-2.9,0-3.4,1.4-3.4,3.4v4.4h6.9l-0.9,6.9h-6V46h11.7c1.4,0,2.5-1.1,2.5-2.5V2.5\n\tC46,1.1,44.9,0,43.5,0z"}
+            Share
+        .right.flex_end
+          .comments-count.visible-downto-xs
+            %a.comments.flex{:href => "girl-job-application-google-chloe-bridgewater/index-.html#post-comments-area"}
+              %i>
+                %svg.svg-icon.icon-open-list-comments{:height => "14", :role => "img", :viewbox => "0 0 14 14", :width => "14"}
+                  %path{:d => "M2.6,0h8.8C13,0,14,1,14,2.6v5.7c0,1.6-1,2.6-2.6,2.6H8.8L3.9,14v-3.1H2.6\n\tC1,10.9,0,9.9,0,8.3V2.6C0,1,1,0,2.6,0z"}
+              6
+              %span.comments-count-text comments
+
+          .vote-panel.vote-post.votes.flex_nolr
+            .vote
+              %a.btn1.btn-up{"data-post-id" => "711745", :href => "javascript:void(0);"}
+                %i
+                  %svg.svg-icon.icon-vote-arrow-up{:height => "16", :role => "img", :viewbox => "0 0 14 16", :width => "14"}
+                    %path{:d => "M10,15V9h3c0.6,0,1-0.3,1-1c0-0.5-0.3-0.8-0.6-1.1L8.2,0.7C7.8,0.3,7.5,0,7,0S6.2,0.3,5.8,0.7L0.6,6.9C0.3,7.2,0,7.5,0,8\n\tc0,0.7,0.4,1,1,1h3v6c0,0.6,0.4,1,1,1h4C9.6,16,10,15.6,10,15z"}
+            .vote
+              %a.btn1.btn-down{"data-post-id" => "711745", :href => "javascript:void(0);"}
+                %i
+                  %svg.svg-icon.icon-vote-arrow-down{:height => "16", :role => "img", :viewbox => "0 0 14 16", :width => "14"}
+                    %path{:d => "M4,1v6H1C0.4,7,0,7.3,0,8c0,0.5,0.3,0.8,0.6,1.1l5.2,6.1C6.2,15.7,6.5,16,7,16s0.8-0.3,1.2-0.7l5.2-6.1\n\tC13.7,8.8,14,8.5,14,8c0-0.7-0.4-1-1-1h-3V1c0-0.6-0.4-1-1-1H5C4.4,0,4,0.4,4,1z"}
+            .points{"data-points" => "44"}
+              44
+              %span.points-text points              
+  %aside.sidebar
+    .sidebar-top.clearfix
+      .trending-posts-feed
+        %h3.title Trending
+        .trending-post
+          %a.img-link{:href => "i-spent-9-months-road-tripping-the-big-lap-of-australia-and-took-these-amazing-photos-to-remember-it/index.html"}
+            %img{:alt => "", :height => "185", :src => "http://static.boredpanda.com/blog/wp-content/uploads/2017/02/thumb_latest_58a45594acbbd.jpg", :title => "", :width => "300"}/
+          %h4
+            %a{:href => "i-spent-9-months-road-tripping-the-big-lap-of-australia-and-took-these-amazing-photos-to-remember-it/index.html"} I Spent 9 Months Road Tripping The Big Lap Of Australia And Took These Amazing Photos To Remember It!
+          %p
+            %span.views-count
+              %a{:href => "i-spent-9-months-road-tripping-the-big-lap-of-australia-and-took-these-amazing-photos-to-remember-it/index.html"}
+                15
+                %span.comments-count-text comments
+            %span.points-count 74 points
+        .trending-post
+          %a.img-link{:href => "how-volunteering-became-our-new-way-of-travelling-elephant-nature-park/index.html"}
+            %img{:alt => "", :height => "185", :src => "http://static.boredpanda.com/blog/wp-content/uploads/2017/02/1-ENP_LunchTimeWithTheGiants-58a363b07002f__300_185.jpg", :title => "", :width => "300"}/
+          %h4
+            %a{:href => "how-volunteering-became-our-new-way-of-travelling-elephant-nature-park/index.html"} Volunteering At Elephant Shelters Became Our New Way Of Travelling
+          %p
+            %span.views-count
+              %a{:href => "how-volunteering-became-our-new-way-of-travelling-elephant-nature-park/index.html"}
+                9
+                %span.comments-count-text comments
+            %span.points-count 51 points
+        .trending-post
+          %a.img-link{:href => "chainsaw-art-at-its-best/index.html"}
+            %img{:alt => "", :height => "185", :src => "http://static.boredpanda.com/blog/wp-content/uploads/2017/02/thumb_latest_589dd1d79428d.jpg", :title => "", :width => "300"}/
+          %h4
+            %a{:href => "chainsaw-art-at-its-best/index.html"} I Create Detailed Wooden Sculptures Carving Them With A Chainsaw
+          %p
+            %span.views-count
+              %a{:href => "chainsaw-art-at-its-best/index.html"}
+                25
+                %span.comments-count-text comments
+            %span.points-count 167 points
+        .trending-post
+          %a.img-link{:href => "orange-birds-cyberbullying/index.html"}
+            %img{:alt => "", :height => "185", :src => "http://static.boredpanda.com/blog/wp-content/uploads/2017/02/orange-birds-cyberbullying-latest.jpg", :title => "", :width => "300"}/
+          %h4
+            %a{:href => "orange-birds-cyberbullying/index.html"} This Innocent Bird Just Got Cyberbullied, And His Reaction Says It All
+          %p
+            %span.views-count
+              %a{:href => "orange-birds-cyberbullying/index.html"}
+                8
+                %span.comments-count-text comments
+            %span.points-count 40 points
+        .trending-post
+          %a.img-link{:href => "mom-shares-photos-of-her-two-sets-of-twins-and-it-will-melt-your-heart/index.html"}
+            %img{:alt => "", :height => "185", :src => "http://static.boredpanda.com/blog/wp-content/uploads/2017/02/set-of-twins-sibling-photoshoot-latest.jpg", :title => "", :width => "300"}/
+          %h4
+            %a{:href => "mom-shares-photos-of-her-two-sets-of-twins-and-it-will-melt-your-heart/index.html"} Mom Shares Photos Of Her Two Sets Of Twins And It Will Melt Your Heart
+          %p
+            %span.views-count
+              %a{:href => "mom-shares-photos-of-her-two-sets-of-twins-and-it-will-melt-your-heart/index.html"}
+                8
+                %span.comments-count-text comments
+            %span.points-count 60 points
+        .trending-post.trending-post-ad
+          #div-gpt-ad-1442371043694-10.dfp-ad
+            :javascript
+              if (!BoredPanda.Config.isMobileWidth) { googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442371043694-10'); }) }
+       
+    .sticky
+      #div-gpt-ad-1442371043694-8.dfp-ad
+        :javascript
+          if (!BoredPanda.Config.isMobileWidth) { googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442371043694-8'); }) }
+      .get-app
+        %h3.title Get the App
+        %a.get-ios-app{:href => "https://itunes.apple.com/app/apple-store/id1001593357?pt=117833574&ct=Website%20Sidebar&mt=8", :target => "_blank"} App Store
+        %a.get-android-app{:href => "https://play.google.com/store/apps/details?id=com.boredpanda.android&referrer=utm_source=website&utm_medium=sidebar", :target => "_blank"} App Store
+      .menu
+        %nav
+          %ul
+            %li
+              %a{:href => "contact-us/index.html"} Contact
+            %li
+              %a{:href => "jobs/index.html"} Jobs
+            %li
+              %a{:href => "advertise/index.html"} Advertise
+            %li
+              %a{:href => "privacy-policy/index.html"} Privacy Policy
+            %li
+              %a{:href => "users-top/index.html"} Top Users
+            %li
+              %a{:href => "bored-panda-newsletter/index.html"} Newsletter
+        %p.copy © 2017 Bored Panda
